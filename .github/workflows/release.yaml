@@ -43,8 +43,8 @@ jobs:
           file: .github/actions/Dockerfile
           push: true
           secrets: |
-            username=foamdino
+            username=nickheminsley
             token=${{ secrets.PAT }}
           tags: |
-            ghcr.io/foamdino/static-site-example:latest
-            ghcr.io/foamdino/static-site-example:${{ env.RELEASE_VERSION }}
+            ghcr.io/nickheminsley/static-site-example:latest
+            ghcr.io/nickheminsley/static-site-example:${{ env.RELEASE_VERSION }}
