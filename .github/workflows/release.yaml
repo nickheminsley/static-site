@@ -43,5 +43,5 @@ jobs:
           file: .github/actions/Dockerfile
           push: true
           tags: |
-            ${{ github.actor }}/static-site-example:latest
-            ${{ github.actor }}/static-site-example:${{ env.RELEASE_VERSION }}
+            ghcr.io/${{ github.actor }}/static-site:latest
+            ghcr.io/${{ github.actor }}/static-site:${{ env.RELEASE_VERSION }}
