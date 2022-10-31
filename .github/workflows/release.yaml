@@ -42,9 +42,9 @@ jobs:
           platforms: linux/amd64
           file: .github/actions/Dockerfile
           push: true
-          secrets: |
-            username=${{ github.actor }}
-            token=${{ secrets.GITHUB_TOKEN }}
+          secrets:
+            username: ${{ github.actor }}
+            password: ${{ secrets.GITHUB_TOKEN }}
           tags: |
-            static-site-example:latest
-            static-site-example:${{ env.RELEASE_VERSION }}
+            ${{ github.actor }}/static-site-example:latest
+            ${{ github.actor }}/static-site-example:${{ env.RELEASE_VERSION }}
