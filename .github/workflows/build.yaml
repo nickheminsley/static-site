@@ -26,6 +26,3 @@ jobs:
           context: ./
           file: .github/actions/Dockerfile
           push: false
-          secrets: |
-            username=nickheminsley
-            token=${{ secrets.PAT }}
