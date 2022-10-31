@@ -43,8 +43,8 @@ jobs:
           file: .github/actions/Dockerfile
           push: true
           secrets: |
-            username=nickheminsley
-            token=${{ secrets.PAT }}
+            username=${{ github.actor }}
+            token=${{ secrets.GITHUB_TOKEN }}
           tags: |
-            ghcr.io/nickheminsley/static-site-example:latest
-            ghcr.io/nickheminsley/static-site-example:${{ env.RELEASE_VERSION }}
+            static-site-example:latest
+            static-site-example:${{ env.RELEASE_VERSION }}
